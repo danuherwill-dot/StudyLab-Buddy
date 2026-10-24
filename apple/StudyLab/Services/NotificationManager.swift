@@ -35,7 +35,7 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     func sendTestNotification() async {
         guard await requestAuthorization() else { return }
         let content = UNMutableNotificationContent()
-        content.title = "As notificações do StudyLab estão ativas"
+        content.title = "As notificações do StudyLab Buddy estão ativas"
         content.body = "Vais receber lembretes como este."
         content.sound = .default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)

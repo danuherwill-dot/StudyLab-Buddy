@@ -1,4 +1,4 @@
-# Contributing to StudyLab
+# Contributing to StudyLab Buddy
 
 Thanks for helping! A few ground rules:
 

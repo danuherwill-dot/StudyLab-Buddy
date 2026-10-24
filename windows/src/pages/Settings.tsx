@@ -63,7 +63,7 @@ export default function SettingsPage() {
           <Toggle checked={s.timerAlerts} onChange={v => actions.setSettings({ timerAlerts: v })} label="Alertas do temporizador" />
           <div className="toggle-row">
             <div className="toggle-label">Notificação de teste</div>
-            <Button onClick={async () => { await ensureNotificationPermission(); notify('As notificações do StudyLab estão ativas', 'Vais receber lembretes como este.') }}>Enviar</Button>
+            <Button onClick={async () => { await ensureNotificationPermission(); notify('As notificações do StudyLab Buddy estão ativas', 'Vais receber lembretes como este.') }}>Enviar</Button>
           </div>
         </Section>
 
@@ -96,7 +96,7 @@ export default function SettingsPage() {
           <div className="toggle-row"><span>Navegar entre secções</span><span className="muted mono">Ctrl + 1 … 5</span></div>
           <div className="toggle-row"><span>Definições</span><span className="muted mono">Ctrl + ,</span></div>
         </Section>
-        <p className="muted small" style={{ textAlign: 'center' }}>StudyLab 1.0 · O teu planeador de estudo</p>
+        <p className="muted small" style={{ textAlign: 'center' }}>StudyLab Buddy 1.0 · O teu planeador de estudo</p>
       </div>
       {pending && <Confirm title={COPY[pending].title} message={COPY[pending].message} onCancel={() => setPending(null)} onConfirm={confirm} />}
     </>

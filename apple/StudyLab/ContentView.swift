@@ -103,7 +103,7 @@ struct ContentView: View {
                     .background(LinearGradient(colors: [Color(hex: "#4F6DF2"), Color(hex: "#8B5CF6")],
                                                startPoint: .topLeading, endPoint: .bottomTrailing),
                                 in: RoundedRectangle(cornerRadius: 9))
-                Text("StudyLab").font(.title3.weight(.bold))
+                Text("StudyLab Buddy").font(.title3.weight(.bold))
                 Spacer()
             }
             .padding(.horizontal, 16)

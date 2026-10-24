@@ -132,7 +132,7 @@ function ShareModal({ data, onClose }: { data: ReportData; onClose: () => void }
   }, [withGrades, db, level])
 
   const text = () => {
-    const lines = [`📚 Relatório StudyLab${name ? ` – ${name}` : ''}`, data.periodTitle, '',
+    const lines = [`📚 Relatório StudyLab Buddy${name ? ` – ${name}` : ''}`, data.periodTitle, '',
       `⏱ Estudo: ${shortDur(data.totalSeconds)} em ${data.sessionCount} sessões`,
       ...data.slices.map(s => `  • ${s.name}: ${hours(s.value)}`)]
     if (data.tasksTotal) lines.push(`✅ Tarefas concluídas: ${data.tasksDone}/${data.tasksTotal} (${Math.round(data.tasksDone / data.tasksTotal * 100)}%)`)

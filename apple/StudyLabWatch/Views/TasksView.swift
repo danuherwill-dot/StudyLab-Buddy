@@ -26,7 +26,7 @@ struct TasksView: View {
         NavigationStack {
             List {
                 if link.snapshot == nil {
-                    Text("Abre o StudyLab no iPhone para sincronizar as tarefas.")
+                    Text("Abre o StudyLab Buddy no iPhone para sincronizar as tarefas.")
                         .font(.footnote).foregroundStyle(.secondary)
                 } else if tasks.isEmpty {
                     Label("Tudo em dia", systemImage: "checkmark.seal").foregroundStyle(.secondary)

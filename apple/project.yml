@@ -27,7 +27,7 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        INFOPLIST_KEY_CFBundleDisplayName: StudyLab
+        INFOPLIST_KEY_CFBundleDisplayName: StudyLab Buddy
         INFOPLIST_KEY_NSSupportsLiveActivities: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
@@ -45,7 +45,7 @@ targets:
     info:
       path: StudyLabWidgets/Info.plist
       properties:
-        CFBundleDisplayName: StudyLab Timer
+        CFBundleDisplayName: StudyLab Buddy Timer
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     settings:
@@ -53,7 +53,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: pt.studylab.StudyLab.Widgets
         TARGETED_DEVICE_FAMILY: "1,2"
         SKIP_INSTALL: YES
-        INFOPLIST_KEY_CFBundleDisplayName: StudyLab Timer
+        INFOPLIST_KEY_CFBundleDisplayName: StudyLab Buddy Timer
   StudyLabMac:
     type: application
     platform: macOS
@@ -68,12 +68,12 @@ targets:
         com.apple.security.files.user-selected.read-write: true
     settings:
       base:
-        PRODUCT_NAME: StudyLab
+        PRODUCT_NAME: StudyLab Buddy
         PRODUCT_BUNDLE_IDENTIFIER: pt.studylab.StudyLab
         GENERATE_INFOPLIST_FILE: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        INFOPLIST_KEY_CFBundleDisplayName: StudyLab
+        INFOPLIST_KEY_CFBundleDisplayName: StudyLab Buddy
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
         INFOPLIST_KEY_NSHumanReadableCopyright: ""
         COMBINE_HIDPI_IMAGES: YES
@@ -92,7 +92,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: pt.studylab.StudyLab.watchkitapp
         GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: StudyLab
+        INFOPLIST_KEY_CFBundleDisplayName: StudyLab Buddy
         INFOPLIST_KEY_WKApplication: YES
         INFOPLIST_KEY_WKCompanionAppBundleIdentifier: pt.studylab.StudyLab
         INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES

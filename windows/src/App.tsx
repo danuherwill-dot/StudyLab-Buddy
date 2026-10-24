@@ -108,7 +108,7 @@ function Shell() {
         <aside className="sidebar">
           <div className="brand">
             <img src="./star.png" alt="" />
-            <span>StudyLab</span>
+            <span>StudyLab Buddy</span>
           </div>
           <nav>
             {NAV.map((n, i) => (

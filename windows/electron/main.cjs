@@ -23,7 +23,7 @@ function createWindow() {
     minWidth: 940,
     minHeight: 640,
     show: false,
-    title: 'StudyLab',
+    title: 'StudyLab Buddy',
     backgroundColor: THEME.dark.bg,
     icon: path.join(__dirname, 'icon.png'),
     autoHideMenuBar: true,
@@ -77,9 +77,9 @@ function showWindow() {
 function createTray() {
   const icon = nativeImage.createFromPath(path.join(__dirname, 'tray.png'))
   tray = new Tray(icon)
-  tray.setToolTip('StudyLab')
+  tray.setToolTip('StudyLab Buddy')
   tray.setContextMenu(Menu.buildFromTemplate([
-    { label: 'Abrir StudyLab', click: showWindow },
+    { label: 'Abrir StudyLab Buddy', click: showWindow },
     { type: 'separator' },
     { label: 'Sair', click: () => { quitting = true; app.quit() } }
   ]))

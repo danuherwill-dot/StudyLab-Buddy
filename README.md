@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="docs/icon.png" width="112" alt="StudyLab icon">
+<img src="docs/icon.png" width="112" alt="StudyLab Buddy icon">
 
-# StudyLab
+# StudyLab Buddy
 
 **The study planner built for Portuguese students.**
 Pomodoro timer · timetable · homework & test reminders · study stats · grade calculator
@@ -17,7 +17,7 @@ Pomodoro timer · timetable · homework & test reminders · study stats · grade
 
 <br>
 
-<img src="docs/banner.png" alt="StudyLab on iPhone" width="100%">
+<img src="docs/banner.png" alt="StudyLab Buddy on iPhone" width="100%">
 
 </div>
 
@@ -159,7 +159,7 @@ docs/screenshots/
 
 ## 🇵🇹 Resumo em português
 
-O StudyLab é uma aplicação de estudo para alunos portugueses: temporizador Pomodoro, horário, TPC e testes com lembretes, estatísticas de estudo (com relatório para partilhar com os pais) e uma calculadora de notas que segue as regras do Ensino Básico (testes 0–100 %, nota de período 1–5) e do Secundário (0–20, média ponderada pela duração das disciplinas). Funciona em iPhone, Apple Watch, Mac e Windows, toda em português de Portugal. Os dados ficam apenas no teu dispositivo.
+O StudyLab Buddy é uma aplicação de estudo para alunos portugueses: temporizador Pomodoro, horário, TPC e testes com lembretes, estatísticas de estudo (com relatório para partilhar com os pais) e uma calculadora de notas que segue as regras do Ensino Básico (testes 0–100 %, nota de período 1–5) e do Secundário (0–20, média ponderada pela duração das disciplinas). Funciona em iPhone, Apple Watch, Mac e Windows, toda em português de Portugal. Os dados ficam apenas no teu dispositivo.
 
 ## 🤝 Contributing
 
@@ -167,4 +167,4 @@ Ideas, bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBU
 
 ## 📄 License & contact
 
-[MIT](LICENSE) © 2026 StudyLab · [apoio@studylab.pt](mailto:apoio@studylab.pt)
+[MIT](LICENSE) © 2026 StudyLab Buddy · [apoio@studylab.pt](mailto:apoio@studylab.pt)

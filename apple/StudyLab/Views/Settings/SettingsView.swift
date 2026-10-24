@@ -88,7 +88,7 @@ struct SettingsView: View {
 
                 Section {
                     if status == .denied {
-                        Label("As notificações do StudyLab estão desativadas nas Definições do sistema.", systemImage: "bell.slash")
+                        Label("As notificações do StudyLab Buddy estão desativadas nas Definições do sistema.", systemImage: "bell.slash")
                             .foregroundStyle(.orange)
                         Button("Abrir Definições do sistema") {
                             Self.openSystemSettings()

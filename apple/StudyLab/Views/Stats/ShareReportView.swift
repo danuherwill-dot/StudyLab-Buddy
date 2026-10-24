@@ -27,7 +27,7 @@ struct ReportData {
     var taskPercent: Int { tasksTotal == 0 ? 0 : Int((Double(tasksDone) / Double(tasksTotal) * 100).rounded()) }
 
     func summaryText(studentName: String) -> String {
-        var lines = ["📚 Relatório StudyLab" + (studentName.isEmpty ? "" : " – \(studentName)"), periodTitle, ""]
+        var lines = ["📚 Relatório StudyLab Buddy" + (studentName.isEmpty ? "" : " – \(studentName)"), periodTitle, ""]
         lines.append("⏱ Estudo: \(DurationFormat.short(seconds: totalSeconds)) em \(sessionCount) sessões")
         for slice in slices.sorted(by: { $0.hours > $1.hours }) {
             lines.append("  • \(slice.name): \(DurationFormat.hours(slice.hours))")
@@ -51,7 +51,7 @@ struct ReportCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             VStack(alignment: .leading, spacing: 4) {
-                Text("StudyLab").font(.caption.weight(.bold)).tracking(2).foregroundStyle(.white.opacity(0.8))
+                Text("StudyLab Buddy").font(.caption.weight(.bold)).tracking(2).foregroundStyle(.white.opacity(0.8))
                 Text(studentName.isEmpty ? "Relatório de estudo" : "Relatório de estudo de \(studentName)")
                     .font(.title2.bold()).foregroundStyle(.white)
                 Text(data.periodTitle).font(.subheadline).foregroundStyle(.white.opacity(0.85))
@@ -192,7 +192,7 @@ struct ShareReportSheet: View {
                         GlassEffectContainer(spacing: 12) {
                             VStack(spacing: 12) {
                                 ShareLink(item: image,
-                                          preview: SharePreview("Relatório StudyLab", image: image)) {
+                                          preview: SharePreview("Relatório StudyLab Buddy", image: image)) {
                                     Label("Partilhar como imagem", systemImage: "photo")
                                         .frame(maxWidth: .infinity).padding(.vertical, 6)
                                 }

@@ -129,7 +129,7 @@ export function TimerProvider({ children }: { children: ReactNode }) {
   // Taskbar progress + window title
   useEffect(() => {
     window.studylab?.setProgress(active && duration ? ringProgress : -1)
-    document.title = active ? `${clock(displaySeconds)} · StudyLab` : 'StudyLab'
+    document.title = active ? `${clock(displaySeconds)} · StudyLab Buddy` : 'StudyLab Buddy'
   }, [active, ringProgress, duration, displaySeconds])
 
   const start = () => {

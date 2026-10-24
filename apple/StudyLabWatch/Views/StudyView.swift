@@ -177,7 +177,7 @@ struct SubjectPicker: View {
                         }
                     }
                 } else {
-                    Text("Abre o StudyLab no iPhone para sincronizar as tuas disciplinas.")
+                    Text("Abre o StudyLab Buddy no iPhone para sincronizar as tuas disciplinas.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }

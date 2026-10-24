@@ -21,7 +21,7 @@ struct TodayView: View {
                 let nowMinutes = (comps.hour ?? 0) * 60 + (comps.minute ?? 0)
                 List {
                     if link.snapshot == nil {
-                        Text("Abre o StudyLab no iPhone para sincronizar o horário.")
+                        Text("Abre o StudyLab Buddy no iPhone para sincronizar o horário.")
                             .font(.footnote).foregroundStyle(.secondary)
                     } else if classes.isEmpty {
                         Label("Sem aulas hoje", systemImage: "moon.stars")
