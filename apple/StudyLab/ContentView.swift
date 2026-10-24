@@ -96,13 +96,10 @@ struct ContentView: View {
         .navigationSplitViewColumnWidth(min: 200, ideal: 220, max: 260)
         .safeAreaInset(edge: .top, spacing: 0) {
             HStack(spacing: 10) {
-                Image(systemName: "sparkles")
-                    .font(.title3.weight(.semibold))
-                    .foregroundStyle(.white)
+                Image("Mascot")
+                    .resizable()
                     .frame(width: 32, height: 32)
-                    .background(LinearGradient(colors: [Color(hex: "#4F6DF2"), Color(hex: "#8B5CF6")],
-                                               startPoint: .topLeading, endPoint: .bottomTrailing),
-                                in: RoundedRectangle(cornerRadius: 9))
+                    .clipShape(RoundedRectangle(cornerRadius: 9))
                 Text("StudyLab Buddy").font(.title3.weight(.bold))
                 Spacer()
             }
