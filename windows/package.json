@@ -1,0 +1,92 @@
+{
+  "name": "studylab",
+  "productName": "StudyLab",
+  "version": "1.0.0",
+  "description": "O teu planeador de estudo",
+  "author": "StudyLab",
+  "private": true,
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "start": "npm run build && electron .",
+    "dist:win": "npm run build && electron-builder --win --x64"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.13",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^44.9.0",
+    "electron-builder": "^26.15.3",
+    "resedit": "^3.1.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  },
+  "build": {
+    "appId": "pt.studylab.app",
+    "productName": "StudyLab",
+    "copyright": "StudyLab",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**",
+      "electron/**",
+      "package.json"
+    ],
+    "artifactName": "StudyLab-Setup-${version}.${ext}",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "appx",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "StudyLab",
+      "installerLanguages": [
+        "pt_PT"
+      ],
+      "language": "2070",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "deleteAppDataOnUninstall": false
+    },
+    "afterPack": "build/afterPack.cjs",
+    "appx": {
+      "identityName": "StudyLab",
+      "publisher": "CN=StudyLab",
+      "publisherDisplayName": "StudyLab",
+      "applicationId": "StudyLab",
+      "displayName": "StudyLab",
+      "languages": [
+        "pt-PT"
+      ],
+      "backgroundColor": "#0C2337",
+      "showNameOnTiles": false
+    }
+  }
+}
