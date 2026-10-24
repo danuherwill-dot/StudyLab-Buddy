@@ -41,7 +41,7 @@
       "electron/**",
       "package.json"
     ],
-    "artifactName": "StudyLab-Setup-${version}.${ext}",
+    "artifactName": "StudyLab-Buddy-Setup-${version}.${ext}",
     "win": {
       "target": [
         {
