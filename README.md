@@ -1,63 +1,98 @@
+<div align="center">
+
+<img src="docs/icon.png" width="112" alt="StudyLab icon">
+
 # StudyLab
 
-**A study planner for Portuguese students** — Pomodoro timer, timetable, homework & test reminders, study statistics and a grade calculator that follows the Portuguese rules (Ensino Básico and Secundário). Built natively for **iPhone, Apple Watch and Mac**, plus a **Windows** app.
+**The study planner built for Portuguese students.**
+Pomodoro timer · timetable · homework & test reminders · study stats · grade calculator
 
-*O teu planeador de estudo.* The whole interface is in European Portuguese (pt-PT).
+<br>
 
-> Not affiliated with any school or government body. The grading rules were researched from public sources (see [Grades](#grades-portuguese-rules)) — always check your school's own rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-6366f1.svg?style=for-the-badge)](LICENSE)
+![Swift](https://img.shields.io/badge/Swift-SwiftUI-F05138?style=for-the-badge&logo=swift&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-React-47848F?style=for-the-badge&logo=electron&logoColor=white)
+![Language](https://img.shields.io/badge/UI-Português%20(PT)-22c55e?style=for-the-badge)
+![Privacy](https://img.shields.io/badge/Data-100%25%20on%20device-0ea5e9?style=for-the-badge)
 
-## Screenshots
+<br>
 
-| iPhone | | |
-|:--:|:--:|:--:|
-| ![Study](docs/screenshots/iphone-study.png) | ![Tasks](docs/screenshots/iphone-tasks.png) | ![Grades](docs/screenshots/iphone-grades.png) |
+<img src="docs/banner.png" alt="StudyLab on iPhone" width="100%">
 
-**Mac**
+</div>
 
-![Mac – Study](docs/screenshots/mac-study.png)
-![Mac – Grades](docs/screenshots/mac-grades.png)
+<br>
 
-**Windows**
+## ✨ Highlights
 
-![Windows – Study](docs/screenshots/windows-study.png)
-![Windows – Stats](docs/screenshots/windows-stats.png)
+| | |
+|---|---|
+| ⏱ **Study hub** | Clock, Pomodoro, stopwatch and countdown. Pick a subject, tick off a focus checklist, and sessions are logged automatically. |
+| 📅 **Timetable** | Weekly grid and day view with a live "now" line. |
+| ✅ **Tasks** | Homework (TPC), tests and assignments with filters. Tests remind you 1 week, 3 days, 1 day and 2 hours before. |
+| 📊 **Statistics** | Study time by week, month, year and subject, weekly goals, and a **share-with-parents** report. |
+| 🎓 **Grades** | Follows the Portuguese rules for Ensino Básico and Secundário. |
+| 🔒 **Private** | No accounts, no analytics, no servers. Everything stays on your device. |
+
+Native on every platform: iOS 26 **Liquid Glass**, Live Activities and Dynamic Island, a Mac sidebar app, an Apple Watch companion, and a Windows app with tray reminders.
+
+> *Not affiliated with any school or government body. Grading rules come from public sources, so always check your school's own rules.*
+
+## 📸 Screenshots
+
+<table>
+<tr>
+<td align="center"><img src="docs/screenshots/iphone-study.png" width="170"><br><sub>Study</sub></td>
+<td align="center"><img src="docs/screenshots/iphone-timetable.png" width="170"><br><sub>Timetable</sub></td>
+<td align="center"><img src="docs/screenshots/iphone-tasks.png" width="170"><br><sub>Tasks</sub></td>
+<td align="center"><img src="docs/screenshots/iphone-stats.png" width="170"><br><sub>Stats</sub></td>
+<td align="center"><img src="docs/screenshots/iphone-grades.png" width="170"><br><sub>Grades</sub></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td><img src="docs/screenshots/mac-study.png"></td>
+<td><img src="docs/screenshots/mac-grades.png"></td>
+</tr>
+<tr>
+<td align="center"><sub><b>Mac</b> · Study</sub></td>
+<td align="center"><sub><b>Mac</b> · Grades</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/windows-study.png"></td>
+<td><img src="docs/screenshots/windows-stats.png"></td>
+</tr>
+<tr>
+<td align="center"><sub><b>Windows</b> · Study</sub></td>
+<td align="center"><sub><b>Windows</b> · Stats</sub></td>
+</tr>
+</table>
 
 <details>
 <summary>More screenshots</summary>
+<br>
 
-![Mac – Timetable](docs/screenshots/mac-timetable.png)
-![Mac – Tasks](docs/screenshots/mac-tasks.png)
-![Mac – Stats](docs/screenshots/mac-stats.png)
-![Windows – Timetable](docs/screenshots/windows-timetable.png)
-![Windows – Tasks](docs/screenshots/windows-tasks.png)
-![Windows – Grades](docs/screenshots/windows-grades.png)
-![iPhone – Stats](docs/screenshots/iphone-stats.png)
-![iPhone – Timetable](docs/screenshots/iphone-timetable.png)
+<table>
+<tr><td><img src="docs/screenshots/mac-timetable.png"></td><td><img src="docs/screenshots/mac-tasks.png"></td></tr>
+<tr><td><img src="docs/screenshots/mac-stats.png"></td><td><img src="docs/screenshots/windows-timetable.png"></td></tr>
+<tr><td><img src="docs/screenshots/windows-tasks.png"></td><td><img src="docs/screenshots/windows-grades.png"></td></tr>
+</table>
 
 </details>
 
-## Features
-
-- **Study hub** – clock, Pomodoro, stopwatch and countdown. A subject is required, sessions are logged automatically, and there is a focus checklist for each session.
-- **Timetable** – weekly grid and day view, with a "now" line.
-- **Tasks** – homework (TPC), tests and assignments with filters and reminders (a test reminds you 1 week, 3 days, 1 day and 2 hours before).
-- **Statistics** – study time per week/month/year, per subject, weekly goals, task completion, and a **"share with parents"** report (image or text).
-- **Grades** – Portuguese rules, see below.
-- **Native on every platform** – iOS 26 *Liquid Glass* design, Live Activities and Dynamic Island for the running timer, a Mac sidebar app, an Apple Watch companion, and a Windows app with system-tray reminders.
-- **Private by design** – everything is stored on your device. No accounts, no analytics, no servers.
-
-## Platforms
+## 🧩 Platforms
 
 | Platform | Folder | Stack |
 |---|---|---|
-| iPhone / iPad | `apple/StudyLab` | SwiftUI, SwiftData, Swift Charts, ActivityKit |
-| Apple Watch | `apple/StudyLabWatch` | SwiftUI, WatchConnectivity (watchOS 10+) |
-| Mac | `apple/StudyLab` (`StudyLabMac` target) | SwiftUI, same code as iPhone with a Mac layout |
-| Windows | `windows/` | Electron, React, TypeScript, Vite |
+| 📱 iPhone / iPad | `apple/StudyLab` | SwiftUI, SwiftData, Swift Charts, ActivityKit |
+| ⌚ Apple Watch | `apple/StudyLabWatch` | SwiftUI, WatchConnectivity (watchOS 10+) |
+| 💻 Mac | `apple/StudyLab` (`StudyLabMac` target) | Same SwiftUI code with a Mac layout |
+| 🪟 Windows | `windows/` | Electron, React, TypeScript, Vite |
 
-The three Apple apps share one SwiftUI code base. The iPhone app pushes subjects, timetable and tasks to the watch, and the watch sends finished study sessions back.
+The Apple apps share one SwiftUI code base. The iPhone pushes subjects, timetable and tasks to the watch, and the watch sends finished sessions back.
 
-## Grades (Portuguese rules)
+## 🎓 Portuguese grade rules
 
 - **Ensino Básico** – tests are marked 0–100 % (red below 50 %, yellow 50–65 %, green above), and every subject gets a **1–5 term mark** per period. The overall average is the mean of the term marks.
 - **Ensino Secundário** – subjects have a 0–20 mark per period in the 10.º, 11.º and 12.º year. A year's mark is its latest period; a subject's final mark is the mean of its years; the **course average is weighted by subject duration** (3-year subjects ×3, 2-year ×2, 1-year ×1, as in the current rules). The weighting can be switched off in the settings.
@@ -65,7 +100,7 @@ The three Apple apps share one SwiftUI code base. The iPhone app pushes subjects
 
 Sources: [gov.pt – conclusion of secundário](https://www.gov.pt/noticias/novas-condicoes-para-concluir-ensino-secundario-e-aceder-ao-ensino-superior), [examesnacionais.com.pt](https://www.examesnacionais.com.pt/calculo_media_final_secundario_acesso_ao_ensino_superior.php).
 
-## Build it yourself
+## 🛠 Build it yourself
 
 ### Apple (iPhone, Watch, Mac)
 
@@ -92,7 +127,7 @@ Requirements: Node.js 20 or later.
 
 ```bash
 cd windows
-npm install
+npm ci
 npm run dev          # the interface in your browser, with hot reload
 npm start            # build and open the Electron app
 npm run dist:win     # build the Windows installer (works from macOS and Linux too)
@@ -100,7 +135,7 @@ npm run dist:win     # build the Windows installer (works from macOS and Linux t
 
 The installer is created in `windows/release/`. It is not code-signed, so Windows SmartScreen will warn on first run.
 
-## Project structure
+## 🗂 Project structure
 
 ```
 apple/
@@ -115,21 +150,21 @@ windows/
 docs/screenshots/
 ```
 
-## Roadmap
+## 🗺 Roadmap
 
-- Chrome and Safari extensions (focus timer and website blocker)
-- Sync between devices
-- Grade planner with the national exams and university access average
-- Microsoft Store (MSIX) and App Store releases
+- [ ] Chrome and Safari extensions (focus timer and website blocker)
+- [ ] Sync between devices
+- [ ] National exams and university access average
+- [ ] Microsoft Store (MSIX) and App Store releases
 
-## Resumo em português
+## 🇵🇹 Resumo em português
 
 O StudyLab é uma aplicação de estudo para alunos portugueses: temporizador Pomodoro, horário, TPC e testes com lembretes, estatísticas de estudo (com relatório para partilhar com os pais) e uma calculadora de notas que segue as regras do Ensino Básico (testes 0–100 %, nota de período 1–5) e do Secundário (0–20, média ponderada pela duração das disciplinas). Funciona em iPhone, Apple Watch, Mac e Windows, toda em português de Portugal. Os dados ficam apenas no teu dispositivo.
 
-## License
+## 🤝 Contributing
 
-[MIT](LICENSE) © 2026 StudyLab
+Ideas, bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Contact
+## 📄 License & contact
 
-Questions, ideas or bugs? Open an issue or write to [apoio@studylab.pt](mailto:apoio@studylab.pt).
+[MIT](LICENSE) © 2026 StudyLab · [apoio@studylab.pt](mailto:apoio@studylab.pt)
